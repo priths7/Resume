@@ -1,7 +1,6 @@
 %-------------------------
 % Resume in Latex
 % Author : Prithvi Chakravarthy
-% Based off of: https://github.com/sb2nov/resume
 % License : MIT
 %------------------------
 
@@ -10,7 +9,7 @@
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
 \usepackage{marvosym}
-\usepackage[hashtags]{color}
+\usepackage{xcolor}
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
@@ -31,7 +30,6 @@
 \addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
-
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
@@ -76,7 +74,6 @@
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
 \begin{document}
 
 \begin{center}
@@ -92,14 +89,14 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {DePaul University}{Chicago, IL}
-      {Master of Science in Computer Science}{Sept. 2025 -- Present} 
+      {Master of Science in Computer Science}{Sept. 2025 -- Present}
       \resumeItemListStart
         \resumeItem{Coursework: Distributed Systems, Applied Algorithms and Structures, DBMS, Real-Time System Architecture}
       \resumeItemListEnd
       
     \resumeSubheading
       {BITS Pilani, WILP}{India}
-      {Postgraduate Certificate in AI/ML}{Oct. 2023 -- Oct. 2024} 
+      {Postgraduate Certificate in AI/ML}{Oct. 2023 -- Oct. 2024}
       \resumeItemListStart
         \resumeItem{Coursework: Deep Learning, Neural Networks, Text Mining, Feature Engineering, Unsupervised Learning}
       \resumeItemListEnd
@@ -117,13 +114,12 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {Designare Solutions Pvt Ltd}{Mumbai, India}
-      {Full Stack Developer}{March 2022 -- August 2025} 
+      {Full Stack Developer}{March 2022 -- August 2025}
       \resumeItemListStart
-        \resumeItem{Developed and deployed full stack applications using React, Node.js, Python and PostgreSQL, improving scalability and performance.}
-        \resumeItem{Designed distributed APIs and optimised data pipelines, reducing query time by ~25\%.}
-        \resumeItem{Managed production deployments on Google Cloud, maintaining 99.9\% uptime.} 
-        \resumeItem{Implemented secure user authentication and role-based access control (RBAC).}
-        \resumeItem{Collaborated with stakeholders to define requirements and deliver on time.}
+        \resumeItem{Engineered and deployed a diverse portfolio of full-stack applications, including \textbf{Geospatial (GIS)}, \textbf{Social Media (Mobile)}, and \textbf{Booking} platforms using React, Node.js, Python, and Kotlin.}
+        \resumeItem{Architected scalable REST and \textbf{Distributed APIs}, optimizing complex spatial and relational queries to achieve a consistent \textbf{25\% reduction in data retrieval latency} across enterprise platforms}
+        \resumeItem{Managed cloud-native infrastructure on \textbf{Google Cloud Platform (GCP)}, implementing \textbf{Cron-driven automation} for data synchronization and maintaining \textbf{99.9\% uptime} for high-traffic services.}
+        \resumeItem{Integrated advanced behavioral analytics (Amplitude/Google Analytics) and implemented enterprise-grade security protocols, including \textbf{Firebase Authentication} and \textbf{Role-Based Access Control (RBAC)}}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -131,673 +127,44 @@
 \section{Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{IQGeo (Telecom/GIS Platform)} $|$ \emph{Python (Pyramid), JavaScript}}{}
+          {\textbf{Deepstory (Social Media Platform)} $|$ \emph{Kotlin/Android, GCP, Firebase, Amplitude}}{}
+          \resumeItemListStart
+            \resumeItem{Developed a short-form video app with \textbf{Clean Architecture}, creating APIs for streaming, likes, and profiles.}
+            \resumeItem{Engineered backend synchronization using \textbf{Cron jobs} for periodic updates of likes, views, and comments.}
+            \resumeItem{Integrated \textbf{Amplitude} for behavior analytics to drive UI/UX improvements and engagement tracking.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Space Invaders Game Engine} $|$ \emph{C\#, Azul Engine, GoF Patterns}}{}
+          \resumeItemListStart
+            \resumeItem{Architected a C\# engine implementing \textbf{14+ GoF design patterns} and \textbf{SOLID principles}}
+            \resumeItem{Eliminated runtime heap allocation via an \textbf{Object Pool} system and used \textbf{Proxy/Flyweight} for sprite rendering.}
+            \resumeItem{Implemented a decoupled collision system using \textbf{Visitor and Observer} patterns with double-dispatch.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{IQGeo (Telecom/GIS Platform)} $|$ \emph{Python, JavaScript, React}}{}
           \resumeItemListStart
             \resumeItem{Developed backend APIs and React modules to visualize large geospatial datasets, translating client requirements into technical specifications.}
             \resumeItem{Architected scalable Python (Pyramid) APIs to handle complex spatial queries, improving data retrieval efficiency for telecom clients.}
-          \resumeItemListEnd
+            \resumeItemListEnd
       \resumeProjectHeading
-          {\textbf{Leisurely (Villa Booking Platform)} $|$ \emph{React, PostgreSQL, GCP}}{}
+          {\textbf{Leisurely (Booking Platform)} $|$ \emph{Python, JavaScript, React}}{}
           \resumeItemListStart
             \resumeItem{Built a high-performance React application and a custom CMS for property management, optimizing data-driven operational workflows.}
             \resumeItem{Designed REST APIs and database schemas that reduced query latency by 25\% while maintaining 99.9\% uptime on GCP}
             \resumeItem{Integrated Google Analytics to capture user events, utilizing "what/when" data insights to improve platform engagement.}
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{Stable Diffusion Image Generation Model} $|$ \emph{Python, PyTorch, Jupyter}}{}
-          \resumeItemListStart
-            \resumeItem{Developed a latent diffusion model using PyTorch to generate high-fidelity images from text prompts, focusing on efficient tensor operations and model architecture.}
-            \resumeItem{Implemented and optimized U-Net and attention mechanisms to improve inference speed and generation quality.}
-            \resumeItem{Managed end-to-end data preprocessing and training pipelines, ensuring numerical stability and convergence across large datasets.}
-          \resumeItemListEnd
+            \resumeItemListEnd
     \resumeSubHeadingListEnd
 
-%-----------PROGRAMMING SKILLS-----------
+%-----------TECHNICAL SKILLS-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Python, JavaScript, TypeScript, Java, Kotlin, C\# }  \\
-     \textbf{Frameworks}{: React, Node.js, Pyramid, MaterialUI, TailwindCSS, PyTorch, TensorFlow}  \\
-     \textbf{Databases}{: PostgreSQL, MySQL, Oracle}  \\
-     \textbf{Tools}{: Google Cloud, GitHub, Docker, Jenkins, CI/CD, REST APIs, Agile, Jest} 
+     \textbf{Languages}{: Python, JavaScript, TypeScript, Java, C\#, Kotlin} \\
+     \textbf{Frameworks/Tools}{: React, Node.js, GCP, Firebase, Android, Docker, Amplitude, PyTorch } \\
+     \textbf{Databases}{: PostgreSQL, MySQL, Oracle}
     }}
  \end{itemize}
 
-%-------------------------------------------
-\end{document}%-------------------------
-% Resume in Latex
-% Author : Prithvi Chakravarthy
-% Based off of: https://github.com/sb2nov/resume
-% License : MIT
-%------------------------
-
-\documentclass[letterpaper,11pt]{article}
-
-\usepackage{latexrender}
-\usepackage[empty]{fullpage}
-\usepackage{titlesec}
-\usepackage{marvosym}
-\usepackage{color}
-\usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
-\usepackage{fancyhdr}
-\usepackage[english]{babel}
-\usepackage{tabularx}
-\input{glyphtounicode}
-
-\pagestyle{fancy}
-\fancyhf{} 
-\fancyfoot{}
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
-
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1.0in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
-
-\urlstyle{same}
-
-\raggedbottom
-\raggedright
-\setlength{\tabcolsep}{0in}
-
-% Sections formatting
-\titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
-
-\pdfgentounicode=1
-
-%-------------------------
-% Custom commands
-\newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}
-  }
-}
-
-\newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-}
-
-\newcommand{\resumeProjectHeading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
-\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
-
-%-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-\begin{document}
-
-\begin{center}
-    \textbf{\Huge \scshape Prithvi Chakravarthy} \\ \small
-    (347) 681-1434 $|$ \href{mailto:pchakrav@depaul.edu}{pchakrav@depaul.edu} $|$ 
-    \href{https://linkedin.com/in/yourprofile}{linkedin.com/in/prithvi-chakravarthy}
-\end{center}
-
-%-----------EDUCATION-----------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {DePaul University}{Chicago, IL}
-      {Master of Science in Computer Science}{Sept. 2025 -- Present} 
-      \resumeItemListStart
-        \resumeItem{Coursework: Distributed Systems, Applied Algorithms and Structures, DBMS, Real-Time System Architecture}
-      \resumeItemListEnd
-      
-    \resumeSubheading
-      {BITS Pilani, WILP}{India}
-      {Postgraduate Certificate in AI/ML}{Oct. 2023 -- Oct. 2024}
-      \resumeItemListStart
-        \resumeItem{Coursework: Deep Learning, Neural Networks, Text Mining, Feature Engineering, Unsupervised Learning}
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {VIT Bhopal}{India}
-      {Bachelor of Engineering in Computer Science}{2018 -- 2022}
-  \resumeSubHeadingListEnd
-
-%-----------EXPERIENCE-----------
-\section{Experience}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Designare Solutions Pvt Ltd}{Remote / India}
-      {Full Stack Developer}{March 2022 -- August 2025} 
-      \resumeItemListStart
-        \resumeItem{Developed and deployed full-stack applications using React, Node.js, Python, and PostgreSQL.}
-        \resumeItem{Designed distributed APIs and optimized data pipelines, reducing query time by ~25\%.}
-        \resumeItem{Managed production deployments on Google Cloud, maintaining 99.9\% uptime.} 
-        \resumeItem{Implemented secure user authentication and role-based access control (RBAC).}
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
-
-%-----------PROJECTS-----------
-\section{Projects}
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{IQGeo (Telecom/GIS Platform)} $|$ \emph{Python (Pyramid), JavaScript}}{}
-          \resumeItemListStart
-            \resumeItem{Developed backend APIs to handle large geospatial datasets for telecom infrastructure.}
-            \resumeItem{Applied distributed system concepts to ensure low-latency data access for clients.}
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{Leisurely (Villa Booking Platform)} $|$ \emph{React, PostgreSQL, GCP}}{}
-          \resumeItemListStart
-            \resumeItem{Designed REST APIs and database schemas, achieving a 25\% reduction in query response time.}
-            \resumeItem{Integrated secure payment flows and role-based user authentication.}
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{Stable Diffusion Image Generation} $|$ \emph{Python, PyTorch, Jupyter}}{}
-          \resumeItemListStart
-            \resumeItem{Fine-tuned Stable Diffusion models to generate domain-specific high-quality images.}
-            \resumeItem{Applied preprocessing and evaluation techniques to improve generative output quality.}
-          \resumeItemListEnd
-    \resumeSubHeadingListEnd
-
-%-----------PROGRAMMING SKILLS-----------
-\section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Languages}{: Python, JavaScript, TypeScript, Java, Kotlin}  \\
-     \textbf{Frameworks}{: React, Node.js, Pyramid, MaterialUI, TailwindCSS, PyTorch, TensorFlow}  \\
-     \textbf{Databases}{: PostgreSQL, MySQL, Oracle}  \\
-     \textbf{Tools}{: Google Cloud, GitHub, Docker, Jenkins, CI/CD, REST APIs, Agile, Distributed Systems} 
-    }}
- \end{itemize}
-
-%-------------------------------------------
-\end{document}%-------------------------
-% Resume in Latex
-% Author : Jake Gutierrez
-% Based off of: https://github.com/sb2nov/resume
-% License : MIT
-%------------------------
-
-\documentclass[letterpaper,11pt]{article}
-
-\usepackage{latexrender}
-\usepackage[empty]{fullpage}
-\usepackage{titlesec}
-\usepackage{marvosym}
-\usepackage[hashtags]{color}
-\usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
-\usepackage{fancyhdr}
-\usepackage[english]{babel}
-\usepackage{tabularx}
-\input{glyphtounicode}
-
-\pagestyle{fancy}
-\fancyhf{} 
-\fancyfoot{}
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
-
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1.0in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
-
-\urlstyle{same}
-
-\raggedbottom
-\raggedright
-\setlength{\tabcolsep}{0in}
-
-% Sections formatting
-\titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
-
-\pdfgentounicode=1
-
-%-------------------------
-% Custom commands
-\newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}
-  }
-}
-
-\newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-}
-
-\newcommand{\resumeProjectHeading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
-\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
-
-%-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-\begin{document}
-
-\begin{center}
-    \textbf{\Huge \scshape Prithvi Chakravarthy} \\ \small
-    (347) 681-1434 $|$ \href{mailto:pchakrav@depaul.edu}{pchakrav@depaul.edu} $|$ 
-    \href{https://linkedin.com/in/yourprofile}{linkedin.com/in/prithvi-chakravarthy}
-\end{center}
-
-%-----------EDUCATION-----------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {DePaul University}{Chicago, IL}
-      {Master of Science in Computer Science}{Sept. 2025 -- Present} 
-      \resumeItemListStart
-        \resumeItem{Coursework: Distributed Systems, Applied Algorithms and Structures, DBMS, Real-Time System Architecture}
-      \resumeItemListEnd
-      
-    \resumeSubheading
-      {BITS Pilani, WILP}{India}
-      {Postgraduate Certificate in AI/ML}{Oct. 2023 -- Oct. 2024}
-      \resumeItemListStart
-        \resumeItem{Coursework: Deep Learning, Neural Networks, Text Mining, Feature Engineering, Unsupervised Learning}
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {VIT Bhopal}{India}
-      {Bachelor of Engineering in Computer Science}{2018 -- 2022}
-  \resumeSubHeadingListEnd
-
-%-----------EXPERIENCE-----------
-\section{Experience}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Designare Solutions Pvt Ltd}{Remote / India}
-      {Full Stack Developer}{March 2022 -- August 2025} 
-      \resumeItemListStart
-        \resumeItem{Developed and deployed full-stack applications using React, Node.js, Python, and PostgreSQL.}
-        \resumeItem{Designed distributed APIs and optimized data pipelines, reducing query time by ~25\%.}
-        \resumeItem{Managed production deployments on Google Cloud, maintaining 99.9\% uptime.} 
-        \resumeItem{Implemented secure user authentication and role-based access control (RBAC).}
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
-
-%-----------PROJECTS-----------
-\section{Projects}
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{IQGeo (Telecom/GIS Platform)} $|$ \emph{Python (Pyramid), JavaScript}}{}
-          \resumeItemListStart
-            \resumeItem{Developed backend APIs to handle large geospatial datasets for telecom infrastructure.}
-            \resumeItem{Applied distributed system concepts to ensure low-latency data access for clients.}
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{Leisurely (Villa Booking Platform)} $|$ \emph{React, PostgreSQL, GCP}}{}
-          \resumeItemListStart
-            \resumeItem{Designed REST APIs and database schemas, achieving a 25\% reduction in query response time.}
-            \resumeItem{Integrated secure payment flows and role-based user authentication.}
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{Stable Diffusion Image Generation} $|$ \emph{Python, PyTorch, Jupyter}}{}
-          \resumeItemListStart
-            \resumeItem{Fine-tuned Stable Diffusion models to generate domain-specific high-quality images.}
-            \resumeItem{Applied preprocessing and evaluation techniques to improve generative output quality.}
-          \resumeItemListEnd
-    \resumeSubHeadingListEnd
-
-%-----------PROGRAMMING SKILLS-----------
-\section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Languages}{: Python, JavaScript, TypeScript, Java, Kotlin}  \\
-     \textbf{Frameworks}{: React, Node.js, Pyramid, MaterialUI, TailwindCSS, PyTorch, TensorFlow}  \\
-     \textbf{Databases}{: PostgreSQL, MySQL, Oracle}  \\
-     \textbf{Tools}{: Google Cloud, GitHub, Docker, Jenkins, CI/CD, REST APIs, Agile, Distributed Systems} 
-    }}
- \end{itemize}
-
-%-------------------------------------------
-\end{document}%-------------------------
-% Resume in Latex
-% Author : Jake Gutierrez
-% Based off of: https://github.com/sb2nov/resume
-% License : MIT
-%------------------------
-
-\documentclass[letterpaper,11pt]{article}
-
-\usepackage{latexrender}
-\usepackage[empty]{fullpage}
-\usepackage{titlesec}
-\usepackage{marvosym}
-\usepackage[hashtags]{color}
-\usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
-\usepackage{fancyhdr}
-\usepackage[english]{babel}
-\usepackage{tabularx}
-\input{glyphtounicode}
-
-\pagestyle{fancy}
-\fancyhf{} 
-\fancyfoot{}
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
-
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1.0in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
-
-\urlstyle{same}
-
-\raggedbottom
-\raggedright
-\setlength{\tabcolsep}{0in}
-
-% Sections formatting
-\titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
-
-\pdfgentounicode=1
-
-%-------------------------
-% Custom commands
-\newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}
-  }
-}
-
-\newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-}
-
-\newcommand{\resumeProjectHeading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
-\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
-
-%-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-\begin{document}
-
-\begin{center}
-    \textbf{\Huge \scshape Prithvi Chakravarthy} \\ \small
-    (347) 681-1434 $|$ \href{mailto:pchakrav@depaul.edu}{pchakrav@depaul.edu} $|$ 
-    \href{https://linkedin.com/in/yourprofile}{linkedin.com/in/prithvi-chakravarthy}
-\end{center}
-
-%-----------EDUCATION-----------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {DePaul University}{Chicago, IL}
-      {Master of Science in Computer Science}{Sept. 2025 -- Present} 
-      \resumeItemListStart
-        \resumeItem{Coursework: Distributed Systems, Applied Algorithms and Structures, DBMS, Real-Time System Architecture}
-      \resumeItemListEnd
-      
-    \resumeSubheading
-      {BITS Pilani, WILP}{India}
-      {Postgraduate Certificate in AI/ML}{Oct. 2023 -- Oct. 2024}
-      \resumeItemListStart
-        \resumeItem{Coursework: Deep Learning, Neural Networks, Text Mining, Feature Engineering, Unsupervised Learning}
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {VIT Bhopal}{India}
-      {Bachelor of Engineering in Computer Science}{2018 -- 2022}
-  \resumeSubHeadingListEnd
-
-%-----------EXPERIENCE-----------
-\section{Experience}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Designare Solutions Pvt Ltd}{Remote / India}
-      {Full Stack Developer}{March 2022 -- August 2025} 
-      \resumeItemListStart
-        \resumeItem{Developed and deployed full-stack applications using React, Node.js, Python, and PostgreSQL.}
-        \resumeItem{Designed distributed APIs and optimized data pipelines, reducing query time by ~25\%.}
-        \resumeItem{Managed production deployments on Google Cloud, maintaining 99.9\% uptime.} 
-        \resumeItem{Implemented secure user authentication and role-based access control (RBAC).}
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
-
-%-----------PROJECTS-----------
-\section{Projects}
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{IQGeo (Telecom/GIS Platform)} $|$ \emph{Python (Pyramid), JavaScript}}{}
-          \resumeItemListStart
-            \resumeItem{Developed backend APIs to handle large geospatial datasets for telecom infrastructure.}
-            \resumeItem{Applied distributed system concepts to ensure low-latency data access for clients.}
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{Leisurely (Villa Booking Platform)} $|$ \emph{React, PostgreSQL, GCP}}{}
-          \resumeItemListStart
-            \resumeItem{Designed REST APIs and database schemas, achieving a 25\% reduction in query response time.}
-            \resumeItem{Integrated secure payment flows and role-based user authentication.}
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{Stable Diffusion Image Generation} $|$ \emph{Python, PyTorch, Jupyter}}{}
-          \resumeItemListStart
-            \resumeItem{Fine-tuned Stable Diffusion models to generate domain-specific high-quality images.}
-            \resumeItem{Applied preprocessing and evaluation techniques to improve generative output quality.}
-          \resumeItemListEnd
-    \resumeSubHeadingListEnd
-
-%-----------PROGRAMMING SKILLS-----------
-\section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Languages}{: Python, JavaScript, TypeScript, Java, Kotlin}  \\
-     \textbf{Frameworks}{: React, Node.js, Pyramid, MaterialUI, TailwindCSS, PyTorch, TensorFlow}  \\
-     \textbf{Databases}{: PostgreSQL, MySQL, Oracle}  \\
-     \textbf{Tools}{: Google Cloud, GitHub, Docker, Jenkins, CI/CD, REST APIs, Agile, Distributed Systems} 
-    }}
- \end{itemize}
-
-%-------------------------------------------
-\end{document}%-------------------------
-% Resume in Latex
-% Author : Jake Gutierrez
-% Based off of: https://github.com/sb2nov/resume
-% License : MIT
-%------------------------
-
-\documentclass[letterpaper,11pt]{article}
-
-\usepackage{latexrender}
-\usepackage[empty]{fullpage}
-\usepackage{titlesec}
-\usepackage{marvosym}
-\usepackage[hashtags]{color}
-\usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
-\usepackage{fancyhdr}
-\usepackage[english]{babel}
-\usepackage{tabularx}
-\input{glyphtounicode}
-
-\pagestyle{fancy}
-\fancyhf{} 
-\fancyfoot{}
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
-
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1.0in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
-
-\urlstyle{same}
-
-\raggedbottom
-\raggedright
-\setlength{\tabcolsep}{0in}
-
-% Sections formatting
-\titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
-
-\pdfgentounicode=1
-
-%-------------------------
-% Custom commands
-\newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}
-  }
-}
-
-\newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-}
-
-\newcommand{\resumeProjectHeading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
-\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
-
-%-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-\begin{document}
-
-\begin{center}
-    \textbf{\Huge \scshape Prithvi Chakravarthy} \\ \small
-    (347) 681-1434 $|$ \href{mailto:pchakrav@depaul.edu}{pchakrav@depaul.edu} $|$ 
-    \href{https://linkedin.com/in/yourprofile}{linkedin.com/in/prithvi-chakravarthy}
-\end{center}
-
-%-----------EDUCATION-----------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {DePaul University}{Chicago, IL}
-      {Master of Science in Computer Science}{Sept. 2025 -- Present} 
-      \resumeItemListStart
-        \resumeItem{Coursework: Distributed Systems, Applied Algorithms and Structures, DBMS, Real-Time System Architecture}
-      \resumeItemListEnd
-      
-    \resumeSubheading
-      {BITS Pilani, WILP}{India}
-      {Postgraduate Certificate in AI/ML}{Oct. 2023 -- Oct. 2024}
-      \resumeItemListStart
-        \resumeItem{Coursework: Deep Learning, Neural Networks, Text Mining, Feature Engineering, Unsupervised Learning}
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {VIT Bhopal}{India}
-      {Bachelor of Engineering in Computer Science}{2018 -- 2022}
-  \resumeSubHeadingListEnd
-
-%-----------EXPERIENCE-----------
-\section{Experience}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Designare Solutions Pvt Ltd}{Remote / India}
-      {Full Stack Developer}{March 2022 -- August 2025} 
-      \resumeItemListStart
-        \resumeItem{Developed and deployed full-stack applications using React, Node.js, Python, and PostgreSQL.}
-        \resumeItem{Designed distributed APIs and optimized data pipelines, reducing query time by ~25\%.}
-        \resumeItem{Managed production deployments on Google Cloud, maintaining 99.9\% uptime.} 
-        \resumeItem{Implemented secure user authentication and role-based access control (RBAC).}
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
-
-%-----------PROJECTS-----------
-\section{Projects}
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{IQGeo (Telecom/GIS Platform)} $|$ \emph{Python (Pyramid), JavaScript}}{}
-          \resumeItemListStart
-            \resumeItem{Developed backend APIs to handle large geospatial datasets for telecom infrastructure.}
-            \resumeItem{Applied distributed system concepts to ensure low-latency data access for clients.}
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{Leisurely (Villa Booking Platform)} $|$ \emph{React, PostgreSQL, GCP}}{}
-          \resumeItemListStart
-            \resumeItem{Designed REST APIs and database schemas, achieving a 25\% reduction in query response time.}
-            \resumeItem{Integrated secure payment flows and role-based user authentication.}
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{Stable Diffusion Image Generation} $|$ \emph{Python, PyTorch, Jupyter}}{}
-          \resumeItemListStart
-            \resumeItem{Fine-tuned Stable Diffusion models to generate domain-specific high-quality images.}
-            \resumeItem{Applied preprocessing and evaluation techniques to improve generative output quality.}
-          \resumeItemListEnd
-    \resumeSubHeadingListEnd
-
-%-----------PROGRAMMING SKILLS-----------
-\section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Languages}{: Python, JavaScript, TypeScript, Java, Kotlin}  \\
-     \textbf{Frameworks}{: React, Node.js, Pyramid, MaterialUI, TailwindCSS, PyTorch, TensorFlow}  \\
-     \textbf{Databases}{: PostgreSQL, MySQL, Oracle}  \\
-     \textbf{Tools}{: Google Cloud, GitHub, Docker, Jenkins, CI/CD, REST APIs, Agile, Distributed Systems} 
-    }}
- \end{itemize}
-
-%-------------------------------------------
 \end{document}
