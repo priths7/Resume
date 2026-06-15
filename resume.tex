@@ -14,6 +14,8 @@
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \input{glyphtounicode}
@@ -80,16 +82,16 @@
 \begin{document}
 
 \begin{center}
-    \textbf{\Huge \scshape Prithvi Chakravarthy} \\ \vspace{1pt}
-    \small 347-681-1434 $|$ \href{mailto:pchakrav@depaul.edu}{\underline{pchakrav@depaul.edu}} $|$ 
-    \href{https://www.linkedin.com/in/prithvi-chakravarthy/}{\underline{linkedin.com/in/prithvi-chakravarthy}} $|$
-    \href{https://github.com/priths7}{\underline{github.com/priths7}} $|$
-    \href{https://priths7.vercel.app/}{\underline{priths7.vercel.app}}
+    {\Huge \scshape Prithvi Chakravarthy} \\ \vspace{1pt} %
+    \small 347-681-1434 $|$ \href{mailto:pchakrav@depaul.edu}{\underline{pchakrav@depaul.edu}} $|$ %
+    \href{https://www.linkedin.com/in/prithvi-chakravarthy/}{\underline{linkedin.com/in/prithvi-chakravarthy}} $|$ %
+    \href{https://github.com/priths7}{\underline{github.com/priths7}} $|$ %
+    \href{https://www.prithvic.dev/}{\underline{prithvic.dev}} %
 \end{center}
 
 %-----------PROFESSIONAL SUMMARY-----------
 \section{Professional Summary}
-  \small{Master of Science in Computer Science student with over three years of professional full-stack engineering experience. Adept at building scalable web applications, designing distributed systems, and integrating applied artificial intelligence into functional software. Proven ability to translate complex technical requirements into accessible digital solutions, with a strong commitment to clean, modular architecture.}
+  \small{Master of Science in Computer Science student at DePaul University with 3 years of professional software development experience. Skilled in technical troubleshooting, customer support, event coordination, and collaborative problem-solving within technology-focused environments.}
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
@@ -98,25 +100,36 @@
       {Master of Science in Computer Science}{Sept. 2025 -- Present} 
       
     \resumeSubheading
-      {BITS Pilani, WILP}{India}
+      {BITS Pilani, WILP}{India} 
       {Postgraduate Certificate in AI/ML}{Oct. 2023 -- Oct. 2024} 
 
     \resumeSubheading
-      {VIT Bhopal}{India}
-      {Bachelor of Technology in Computer Science}{Jun. 2018 -- Jun. 2022}
+      {VIT Bhopal}{India} 
+      {Bachelor of Technology in Computer Science}{Jun. 2018 -- Jun. 2022} 
   \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------
-\section{Experience}
+\section{Leadership \& Campus Involvement}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Designare Solutions Pvt Ltd}{Mumbai, India}
+      {Model United Nations (VITB-MUN)}{Bhopal, India}
+      {Registration Head}{} 
+      \resumeItemListStart
+        \resumeItem{Managed attendee registration and check-in operations for a large university conference.}
+        \resumeItem{Coordinated with event teams to prepare venues and resolve logistical issues.}
+        \resumeItem{Served as a primary point of contact for participants, providing guidance and support throughout the event.}
+      \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\section{Experience}
+  \resumeSubHeadingListStart    
+    \resumeSubheading
+      {Designare Solutions Pvt Ltd}{Mumbai, India} 
       {Full Stack Developer}{March 2022 -- August 2025} 
       \resumeItemListStart
-        \resumeItem{Developed and deployed full-stack applications—including the Deepstory, Leisurely, and Iqgeo platforms—using React, Node.js, Python, and PostgreSQL, ensuring scalable and maintainable codebases.}
-        \resumeItem{Designed distributed APIs and optimised data pipelines, reducing query time by ~25\%.}
-        \resumeItem{Managed production deployments on Google Cloud, maintaining 99.9\% uptime while implementing secure user authentication and role-based access control (RBAC).} 
-        \resumeItem{Collaborated with stakeholders to define requirements and deliver on time.}
+        \resumeItem{Developed and maintained full-stack applications using React, Node.js, Python, and cloud technologies in a collaborative team environment.}
+        \resumeItem{Worked directly with stakeholders to understand requirements, communicate technical concepts, and deliver reliable solutions.}
+        \resumeItem{Supported cloud-hosted systems and contributed to maintaining 99.9\% application availability.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -124,25 +137,23 @@
 \section{Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{AI Journal OS} $|$ \emph{React, TypeScript, Rust, Tauri, gRPC}}{}
+          {\textbf{Space Invaders Game Engine (SE546)} $|$ \emph{C\#, Azul Engine}}{}
           \resumeItemListStart
-            \resumeItem{Engineered a privacy-first, local-offline AI journaling prototype utilizing Tauri, Rust, and React.}
-            \resumeItem{Architected a two-stage AI privacy pipeline that intercepts user prompts via a background Rust thread, utilizing the \textbf{candle} framework to locally redact PII before routing queries to the Groq cloud API.}
-            \resumeItem{Built a secure, encrypted-at-rest local vault using AES-256 (\textbf{magic\_crypt}) and developed a custom hybrid sync engine to push ciphertext securely to a Supabase PostgreSQL cloud database.}
+            \resumeItem{Built a Space Invaders game and custom engine in C\#, implementing collision detection, sprite rendering, and modular gameplay systems.}
+            \resumeItem{Applied software design patterns to support maintainable and extensible game architecture.}
           \resumeItemListEnd
+          
       \resumeProjectHeading
-          {\textbf{Space Invaders Game Engine} $|$ \emph{C\#, Azul Engine, IrrKlang}}{}
+          {\textbf{Interactive Game Development Session} $|$ \emph{Unity}}{}
           \resumeItemListStart
-            \resumeItem{Engineered a high-performance Space Invaders clone using \textbf{C\#} and the \textbf{Azul engine}, strictly adhering to \textbf{SOLID principles} and implementing \textbf{14+ GoF design patterns} to ensure a modular and decoupled architecture.}
-            \resumeItem{Optimized memory management by architecting a universal \textbf{Object Pool} system (Template pattern), eliminating runtime heap allocation spikes and leveraging \textbf{Proxy/Flyweight patterns} to reduce GPU memory overhead for sprite rendering.}
-            \resumeItem{Developed a decoupled collision detection system using \textbf{Visitor and Observer patterns} for double-dispatch resolution, and managed interval-based game events via a \textbf{Command pattern} paired with a \textbf{Priority Queue}.}
-            \resumeItemListEnd
+            \resumeItem{Participated in an intensive Unity game development session during undergraduate studies, gaining hands-on experience with game scene construction, physics components, and interactive environments.}
+          \resumeItemListEnd
+          
       \resumeProjectHeading
-          {\textbf{Stable Diffusion Image Generation Model} $|$ \emph{Python, PyTorch, Jupyter}}{}
+          {\textbf{AI Journal OS} $|$ \emph{React, TypeScript, Rust, Tauri, gRPC}}{} 
           \resumeItemListStart
-            \resumeItem{Developed a latent diffusion model using PyTorch to generate high-fidelity images from text prompts, focusing on efficient tensor operations and model architecture.}
-            \resumeItem{Implemented and optimized U-Net and attention mechanisms to improve inference speed and generation quality.}
-            \resumeItem{Managed end-to-end data preprocessing and training pipelines, ensuring numerical stability and convergence across large datasets.}
+            \resumeItem{Built a privacy-first AI journaling application using Rust, Tauri, React, and TypeScript.}
+            \resumeItem{Designed a local AI pipeline that redacts sensitive information before sending requests to cloud-based models.}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
@@ -150,10 +161,9 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Python, JavaScript, TypeScript, Rust, Java, Kotlin, C\# }  \\
-     \textbf{Frameworks/Libraries}{: React, Node.js, Tauri, PyTorch, TensorFlow, Pyramid, TailwindCSS }  \\
-     \textbf{Databases}{: PostgreSQL, MySQL, Oracle}  \\
-     \textbf{Tools}{: Google Cloud, GitHub, Docker, Jenkins, CI/CD, REST APIs, Jest} 
+    \textbf{Languages}{: Python, JavaScript, TypeScript, Rust, Java, Kotlin, C\#} \\
+    \textbf{Technologies}{: React, Node.js, Tauri, Google Cloud, Docker, GitHub, Unity, PyTorch, TensorFlow} \\
+    \textbf{Skills}{: Technical Troubleshooting, Customer Service, Event Coordination, Project Management}
     }}
  \end{itemize}
 
