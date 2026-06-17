@@ -84,7 +84,7 @@
     \small 347-681-1434 $|$ \href{mailto:pchakrav@depaul.edu}{\underline{pchakrav@depaul.edu}} $|$ 
     \href{https://www.linkedin.com/in/prithvi-chakravarthy/}{\underline{linkedin.com/in/prithvi-chakravarthy}} $|$
     \href{https://github.com/priths7}{\underline{github.com/priths7}} $|$
-    \href{https://priths7.vercel.app/}{\underline{priths7.vercel.app}}
+    \href{https://prithvic.dev/}{\underline{prithvic.dev}}
 \end{center}
 
 %-----------EDUCATION-----------
@@ -119,37 +119,32 @@
       {Designare Solutions Pvt Ltd}{Mumbai, India}
       {Full Stack Developer}{March 2022 -- August 2025} 
       \resumeItemListStart
-        \resumeItem{Developed and deployed full stack applications using React, Node.js, Python and PostgreSQL, improving scalability and performance.}
-        \resumeItem{Designed distributed APIs and optimised data pipelines, reducing query time by ~25\%.}
-        \resumeItem{Managed production deployments on Google Cloud, maintaining 99.9\% uptime.} 
-        \resumeItem{Implemented secure user authentication and role-based access control (RBAC).}
-        \resumeItem{Collaborated with stakeholders to define requirements and deliver on time.}
+        \resumeItem{Developed and deployed full stack applications using React, Node.js, Python (FastAPI) and PostgreSQL, improving scalability and backend performance.}
+        \resumeItem{Designed distributed REST APIs and optimized data pipelines, reducing query retrieval time by 25\%.}
+        \resumeItem{Managed production deployments on Google Cloud infrastructure, maintaining 99.9\% uptime.} 
+        \resumeItem{Implemented secure user authentication, role-based access control (RBAC), and wired external data sources into cohesive end-user interfaces.}
       \resumeItemListEnd
+
   \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------
 \section{Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
+          {\textbf{AI Journal OS} $|$ \emph{Rust, Tauri, React, TypeScript, SQLite, Candle}}{}
+          \resumeItemListStart
+            \resumeItem{Built a privacy-first, local-offline AI ecosystem using a dual-topology architecture, integrating a Tauri React frontend with a standalone Rust background worker.}
+            \resumeItem{Engineered a local Retrieval-Augmented Generation (RAG) pipeline utilizing pure Rust vector math and SQLite BLOB structures, generating CPU-friendly embeddings with the all-MiniLM-L6-v2 model.}
+            \resumeItem{Designed a privacy-safe AI orchestration pipeline that budgets token counts, redacts PII locally via Hugging Face models, and routes sanitized context to the Groq API before rehydrating tokens upon response.}
+            \resumeItem{Implemented a zero-knowledge cloud synchronization engine with Neon PostgreSQL, ensuring all third-party credentials and personal data remain AES-256 encrypted at rest.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
           {\textbf{Space Invaders Game Engine} $|$ \emph{C\#, Azul Engine, IrrKlang}}{}
           \resumeItemListStart
-            \resumeItem{Engineered a high-performance Space Invaders clone using \textbf{C\#} and the \textbf{Azul engine}, strictly adhering to \textbf{SOLID principles} and implementing \textbf{14+ GoF design patterns} to ensure a modular and decoupled architecture.}
-            \resumeItem{Optimized memory management by architecting a universal \textbf{Object Pool} system (Template pattern), eliminating runtime heap allocation spikes and leveraging \textbf{Proxy/Flyweight patterns} to reduce GPU memory overhead for sprite rendering.}
-            \resumeItem{Developed a decoupled collision detection system using \textbf{Visitor and Observer patterns} for double-dispatch resolution, and managed interval-based game events via a \textbf{Command pattern} paired with a \textbf{Priority Queue}.}
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{Distributed File Retrieval \& Indexing System} $|$ \emph{Java, gRPC, ZeroMQ, Protobuf}}{}
-          \resumeItemListStart
-            \resumeItem{Engineered a distributed search engine that indexes local files and retrieves file paths based on term frequency (TF) analysis across a multi-node network.}
-            \resumeItem{Architected a dual-protocol communication layer using \textbf{gRPC} for synchronous file requests and \textbf{ZeroMQ} for broadcasting search queries, reducing retrieval latency by \textbf{45\%}.}
-            \resumeItem{Optimized data serialization with custom Protobuf schemas to handle high-frequency metadata exchanges, ensuring minimal overhead during large-scale file indexing operations.}
-            \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{Stable Diffusion Image Generation Model} $|$ \emph{Python, PyTorch, Jupyter}}{}
-          \resumeItemListStart
-            \resumeItem{Developed a latent diffusion model using PyTorch to generate high-fidelity images from text prompts, focusing on efficient tensor operations and model architecture.}
-            \resumeItem{Implemented and optimized U-Net and attention mechanisms to improve inference speed and generation quality.}
-            \resumeItem{Managed end-to-end data preprocessing and training pipelines, ensuring numerical stability and convergence across large datasets.}
+            \resumeItem{Engineered a high-performance Space Invaders clone using \textbf{C\#} and the \textbf{Azul engine}, strictly adhering to \textbf{SOLID principles} and implementing \textbf{14+ GoF design patterns} to ensure a modular architecture.}
+            \resumeItem{Optimized memory management by architecting a universal \textbf{Object Pool} system (Template pattern), eliminating runtime heap allocation spikes and leveraging \textbf{Proxy/Flyweight patterns}.}
+            \resumeItem{Developed a decoupled collision detection system using \textbf{Visitor and Observer patterns} for double-dispatch resolution, and managed interval-based events via a \textbf{Command pattern} and Priority Queue.}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
@@ -157,10 +152,10 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Python, JavaScript, TypeScript, Java, Kotlin, C\# }  \\
-     \textbf{Frameworks/Libraries}{: React, Node.js, Pyramid, MaterialUI, TailwindCSS, PyTorch, TensorFlow}  \\
-     \textbf{Databases}{: PostgreSQL, MySQL, Oracle}  \\
-     \textbf{Tools}{: Google Cloud, GitHub, Docker, Jenkins, CI/CD, REST APIs, Jest} 
+     \textbf{Languages}{: Python, Java, JavaScript, TypeScript, Rust, Kotlin, C\# }  \\
+     \textbf{AI/ML Technologies}{: Large Language Models (LLMs), RAG Architecture, Prompt Engineering, Embeddings, PyTorch, TensorFlow}  \\
+     \textbf{Frameworks/Libraries}{: React, Node.js, FastAPI, Flask, LangChain, LlamaIndex, MaterialUI}  \\
+     \textbf{Databases \& Tools}{: PostgreSQL, SQLite, Vector Databases, Google Cloud, Docker, REST APIs, Git} 
     }}
  \end{itemize}
 
